@@ -1,0 +1,21 @@
+--cpu Cortex-M3
+"work3\startup_stm32f103xb.o"
+"work3\main.o"
+"work3\stm32f1xx_it.o"
+"work3\stm32f1xx_hal_msp.o"
+"work3\stm32f1xx_hal_gpio_ex.o"
+"work3\stm32f1xx_hal.o"
+"work3\stm32f1xx_hal_rcc.o"
+"work3\stm32f1xx_hal_rcc_ex.o"
+"work3\stm32f1xx_hal_gpio.o"
+"work3\stm32f1xx_hal_dma.o"
+"work3\stm32f1xx_hal_cortex.o"
+"work3\stm32f1xx_hal_pwr.o"
+"work3\stm32f1xx_hal_flash.o"
+"work3\stm32f1xx_hal_flash_ex.o"
+"work3\stm32f1xx_hal_exti.o"
+"work3\system_stm32f1xx.o"
+--strict --scatter "Work3\Work3.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "Work3.map" -o Work3\Work3.axf
